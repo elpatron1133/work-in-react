@@ -1,0 +1,10 @@
+
+
+.nav-link {
+    text-align: center;
+    width: 8em;}
+
+
+    .active{
+        color: blueviolet;
+    }
