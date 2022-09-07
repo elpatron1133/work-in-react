@@ -1,4 +1,9 @@
-function formatearBusqueda(val) {
+import ObtenerInfo  from "./informacion"
+
+
+
+
+export function formatearBusqueda(val) {
   const formatearBusquedaInt = () => {
     const palabras = val
       .toLowerCase()
@@ -13,5 +18,19 @@ function formatearBusqueda(val) {
   let busqueda = formatearBusquedaInt();
   return busqueda;
 }
+  //**sirve al 100 solo hay que implementar las imagenes
+  
+  function borrarDatos(){
+    document.getElementById("resultado").innerHTML = "";
+  }
 
-export default formatearBusqueda;
+
+
+export function buscar() {
+  let input = document.getElementById("input").value;
+  let inputUser = formatearBusqueda(input);
+
+  borrarDatos();
+  ObtenerInfo(inputUser)
+}
+

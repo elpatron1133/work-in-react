@@ -48,7 +48,7 @@ export default function NavBar() {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href=" "
+                  href=""
                   id="dropdownId"
                   data-bs-toggle="dropdown"
                 >
