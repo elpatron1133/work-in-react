@@ -1,4 +1,6 @@
 export default function ObtenerInfo(busquedaUsuario) {
+  //*esta funcion es la que realiza la busqueda y muestra los datos en el div resultado
+  //*se obtiene la informacion en un array gracias a fetch
   const URL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
   let nameCard = busquedaUsuario;
 
@@ -7,7 +9,8 @@ export default function ObtenerInfo(busquedaUsuario) {
     .then((data) => {
       const array = data.data;
 
-      let buscar = () => {
+      //*y se filtra la busqueda usando el metodo filter y el resultado se muestra en el div resultado gracias a forEach
+      let buscarInt = () => {
         let resultado = array.filter((item) => item.name.includes(nameCard));
         resultado.forEach((card) => {
           let name = card.name;
@@ -26,6 +29,6 @@ export default function ObtenerInfo(busquedaUsuario) {
           document.getElementById("resultado").appendChild(content);
         });
       };
-      buscar();
+      buscarInt();
     });
 }

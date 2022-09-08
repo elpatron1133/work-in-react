@@ -52,11 +52,11 @@ export default function NavBar() {
                   id="dropdownId"
                   data-bs-toggle="dropdown"
                 >
-                  Dropdown
+                  Mas apps
                 </a>
                 <div className="dropdown-menu" aria-labelledby="dropdownId">
-                  <NavLink className="dropdown-item" to="/null">
-                    Action 1
+                  <NavLink className="dropdown-item" to="/react-work/piedrapapeltijera">
+                    Piedra papel y tijera
                   </NavLink>
                   <NavLink className="dropdown-item" to="/null">
                     Action 2

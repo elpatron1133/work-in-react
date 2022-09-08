@@ -1,0 +1,25 @@
+img.img-play{
+    width: 80px;
+    height:80px;
+}
+
+.opciones{
+    background-color: red;
+}
+button.btn-play {
+    border-radius: 35px;
+    width: 5em;
+    height: auto;
+    background: #0d7373;
+}
+button.btn-play:hover {
+    border-radius: 35px;
+    width: 5em;
+    height: auto;
+    background: #00aeae;
+}
+#resultado {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

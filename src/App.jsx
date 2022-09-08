@@ -6,6 +6,7 @@ import logo from "./img/logo-aguilar.png";
 import Calculadora from "./components/calculadora/Calculadora";
 import ContadorDeClicks from "./components/contador/ContadorDeClicks";
 import { YugiFind } from "./components/yugi/YugiFind";
+import PiedraPapelTijera from "./components/piedrapapeltijera/PiedraPapelTijera";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/react-work/calculadora" element={<Calculadora />} />
           <Route path="/react-work/contador" element={<ContadorDeClicks />} />
           <Route path="/react-work/yugi" element={<YugiFind />} />
+          <Route path="/react-work/piedrapapeltijera" element={<PiedraPapelTijera />} />
           <Route path="*" element={<NoFoundpage />} />
         </Routes>
       </div>
