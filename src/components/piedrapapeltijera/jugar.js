@@ -1,9 +1,8 @@
 import "./style/PiedraPapelTijera.css";
 
-  const piedra = "piedra";
-  const papel = "papel";
-  const tijera = "tijera";
-  
+const piedra = "piedra";
+const papel = "papel";
+const tijera = "tijera";
 
 function jugar(opcion) {
   var opcionMaquina = Math.floor(Math.random() * 3) + 1;
@@ -32,8 +31,10 @@ function jugar(opcion) {
       ? "ganaste"
       : null;
 
-  return `Elegiste: <img  class="img-play" src="src/components/piedrapapeltijera/img/${opcionJugador}.png" alt="${opcionJugador}">
-         La maquina Eligio: <img  class="img-play" src="src/components/piedrapapeltijera/img/${opcionMaquina}.png" alt="${opcionMaquina}">
+  return `Elegiste: <img  class="img-play" src="https://aguilar.digital/wp-content/uploads/2022/09/${opcionJugador}.png"
+  >
+         La maquina Eligio: <img  class="img-play" src="https://aguilar.digital/wp-content/uploads/2022/09/${opcionMaquina}.png"
+         alt="${opcionMaquina}">
           ${ganador}`;
 }
 
