@@ -29,7 +29,7 @@ export default function ContadorDeClicks() {
     <>
       <Contador numeroClicks={numeroClicks} />
 
-      <div className="contenedor-principal">
+      <div className="contenedor-principal container">
         <Button
           texto="Click"
           esBotondeClick={true}

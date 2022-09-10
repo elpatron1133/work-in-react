@@ -11,7 +11,7 @@ export default function ObtenerInfo(busquedaUsuario) {
 
       //*y se filtra la busqueda usando el metodo filter y el resultado se muestra en el div resultado gracias a forEach
       let buscarInt = () => {
-        let resultado = array.filter((item) => item.name.includes(nameCard));
+        let resultado = array.filter((item) => item.name.toLowerCase().includes(nameCard));
         resultado.forEach((card) => {
           let name = card.name;
           let type = card.type;

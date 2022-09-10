@@ -9,8 +9,8 @@ export function YugiFind() {
         <h1>Buscar Carta de Yu-Gi-Oh!</h1>
         <h3>Instrucciones</h3>
         <span>
-          Introduce el nombre de alguna carta por ejemplo{" "}
-          <strong>dark magician, baby dragon etc</strong>
+          Introduce el nombre en mayusculas o minusculas de alguna carta por ejemplo{" "}
+          <strong>dark magician, baby dragon ,blue-eyes white dragon </strong> <br />si el nombre incluye guion debes agregarlo sej <strong>"red-eyes"</strong> 
         </span>
         <br />
         <label>

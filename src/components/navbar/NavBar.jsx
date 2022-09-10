@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 export default function NavBar() {
   return (
     <div className="container-fluid bg-dark">

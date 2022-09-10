@@ -6,5 +6,18 @@
 
 
     .active{
-        color: blueviolet;
+        color: rgb(180, 119, 236);
     }
+
+img.logo{
+    width: 40%;
+    height: auto;
+}
+
+
+ 
+element.style {
+}
+.modal-backdrop.show {
+    display: none;
+}
