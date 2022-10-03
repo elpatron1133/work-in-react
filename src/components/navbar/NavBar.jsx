@@ -18,7 +18,7 @@ export default function NavBar() {
 
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav me-auto mt-2 mt-lg-0">
-              <li className="nav-item active">
+              <li className="nav-item boton  active">
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "active nav-link" : "nav-link"
@@ -28,23 +28,23 @@ export default function NavBar() {
                   Home <span className="visually-hidden">(current)</span>
                 </NavLink>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item boton  active">
                 <NavLink className="nav-link" to="react-work/contador">
                   Contador <span className="visually-hidden">(current)</span>
                 </NavLink>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item boton  active">
                 <NavLink className="nav-link" to="react-work/calculadora">
                   Calculadora<span className="visually-hidden">(current)</span>
                 </NavLink>
               </li>
-
-              <li className="nav-item">
-                <NavLink className="nav-link" to="react-work/yugi">
-                  YugiCards
+              <li className="nav-item boton  active">
+                <NavLink className="nav-link" to="react-work/yugicards">
+                  YugiCards<span className="visually-hidden">(current)</span>
                 </NavLink>
               </li>
-              <li className="nav-item dropdown">
+
+              <li className="nav-item boton  dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href=""
@@ -54,11 +54,14 @@ export default function NavBar() {
                   Mas apps
                 </a>
                 <div className="dropdown-menu" aria-labelledby="dropdownId">
-                  <NavLink className="dropdown-item" to="/react-work/piedrapapeltijera">
+                  <NavLink
+                    className="dropdown-item"
+                    to="/react-work/piedrapapeltijera"
+                  >
                     Piedra papel y tijera
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/null">
-                    Action 2
+                  <NavLink className="dropdown-item" to="/react-work/tasklist">
+                    TaskList
                   </NavLink>
                 </div>
               </li>

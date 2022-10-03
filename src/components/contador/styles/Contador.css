@@ -14,3 +14,9 @@
 .botones{
     display: flex;
 }
+@media (max-width: 500px){
+    .contador{
+        min-width: 20%;
+    height:1.6em;
+    }
+}

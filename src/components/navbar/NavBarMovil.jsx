@@ -6,7 +6,7 @@ import { NavLink, Link } from "react-router-dom";
 export default function NavBarMovil() {
   return (
     <>
-      <nav className="navbar bg-dark ">
+      <nav className="navbar ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
             <img

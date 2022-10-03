@@ -6,7 +6,8 @@
 
 html,
 body {
-  background: rgb(74, 98, 105);
+  background-image: url("https://cdn.pixabay.com/photo/2021/01/11/10/20/circuit-board-5907811_960_720.jpg");
+  color: rgb(255, 255, 255);
 }
 
 .App,.divPrincipal{
@@ -39,7 +40,7 @@ body {
 }
 
 .contenedor-principal{
-  min-width: 600px;
+  min-width: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

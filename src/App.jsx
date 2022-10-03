@@ -1,5 +1,6 @@
 import NavBarMovil from "./components/navbar/NavBarMovil";
 import NavBar from "./components/navbar/NavBar";
+import HomePage from "./components/homePage/HomePage";
 import NoFoundpage from "./pages/NotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -8,6 +9,7 @@ import Calculadora from "./components/calculadora/Calculadora";
 import ContadorDeClicks from "./components/contador/ContadorDeClicks";
 import { YugiFind } from "./components/yugi/YugiFind";
 import PiedraPapelTijera from "./components/piedrapapeltijera/PiedraPapelTijera";
+import TaskMain from "./components/taskList/TaskMain";
 import styled from "styled-components";
 
 export default function App() {
@@ -25,11 +27,12 @@ export default function App() {
       <div className="logo">
         <img src={logo} alt="Logo Aguilar" />
       </div>
-      <div className="divPrincipal container-fluid">
+      <div className="divPrincipal container-fluid " aria-current="page"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close" type="button" >
         <Routes>
           <Route
-            path="/react-work"
-            element={<h2>Home page en construccion</h2>}
+            path="/react-work"element={<HomePage />}
           />
           <Route path="/react-work/calculadora" element={<Calculadora />} />
           <Route path="/react-work/contador" element={<ContadorDeClicks />} />
@@ -38,6 +41,7 @@ export default function App() {
             path="/react-work/piedrapapeltijera"
             element={<PiedraPapelTijera />}
           />
+          <Route path="/react-work/tasklist" element={<TaskMain />} />
           <Route path="*" element={<NoFoundpage />} />
         </Routes>
       </div>
@@ -49,7 +53,10 @@ const NavsContainer = styled.div`
 .navbar>.container-fluid{
   flex-direction:column;
     }
-}
+
+    .offcanvas-header .btn-close {
+      margin:0 10px
+    }
 
 .navBarMovil{
   display: none;

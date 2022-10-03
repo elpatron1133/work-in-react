@@ -1,0 +1,18 @@
+.imagenfront{
+    width: 75%;
+}
+.carousel-item.active {
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Conten', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f00;
+    margin: 0;
+    padding: 20px;
+  }

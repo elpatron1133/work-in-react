@@ -13,6 +13,18 @@ img.logo{
     width: 40%;
     height: auto;
 }
+li.nav-item.boton{
+    background-color: #0d7373;
+    margin  : 2px 4px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px #ff0582;
+}
+li.nav-item.boton:hover{
+    background-color: #03d6d6;
+    color: #fff;
+    box-shadow: 2px 1px 5px #f89ef4;
+
+}
 
 
  
@@ -20,4 +32,8 @@ element.style {
 }
 .modal-backdrop.show {
     display: none;
+}
+
+.navbar{
+    background-image: url(https://img.freepik.com/vector-premium/fondo-oscuro-patron-circulo-repetitivo_3442-2002.jpg);
 }
