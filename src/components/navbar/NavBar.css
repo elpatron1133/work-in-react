@@ -28,12 +28,8 @@ li.nav-item.boton:hover{
 
 
  
-element.style {
-}
-.modal-backdrop.show {
-    display: none;
-}
 
 .navbar{
-    background-image: url(https://img.freepik.com/vector-premium/fondo-oscuro-patron-circulo-repetitivo_3442-2002.jpg);
+    background-image: url("./assets/fondo2.jpg");
+    box-shadow:  0 1px 10px rgb(255, 255, 255);
 }

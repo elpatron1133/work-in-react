@@ -6,11 +6,14 @@
 
 html,
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2021/01/11/10/20/circuit-board-5907811_960_720.jpg");
+  background-image: url(./img/fondo.jpg);
+  background-position: center;
+  background-repeat: repeat;
   color: rgb(255, 255, 255);
 }
 
-.App,.divPrincipal{
+.App,
+.divPrincipal {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -36,10 +39,10 @@ body {
 
   height: 90px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
-.contenedor-principal{
+.contenedor-principal {
   min-width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -47,13 +50,12 @@ body {
   justify-content: center;
 }
 
-#logo{
+#logo {
   width: 80%;
   height: auto;
 }
 
-
-.cNoFound{
+.cNoFound {
   display: flex;
   background-color: rgba(65, 225, 217, 0.411);
   align-items: center;
@@ -61,61 +63,76 @@ body {
   width: 55%;
   border-radius: 50px;
   flex-direction: column;
-
 }
-.NoFoundpage{
+.NoFoundpage {
   width: 100%;
   border-radius: 30px;
   margin-top: -14px;
 }
-.intenta{
+.intenta {
   margin-top: -10%;
   text-align: center;
 }
 
-
-#root div.navBarMovil > nav > div > button{
-  background-color:#0d7373;
+#root div.navBarMovil > nav > div > button {
+  background-color: #0d7373;
   width: 100px;
   height: 50px;
 }
-#root div.navBarMovil > nav > div > button:hover{
-  background-color:hsl(180, 88%, 48%);
+#root div.navBarMovil > nav > div > button:hover {
+  background-color: hsl(180, 88%, 48%);
 }
 
-.offcanvas-body{
+.offcanvas-body {
   background-color: rgb(74, 98, 105);
   color: white;
 }
-.offcanvas-header{
+.offcanvas-header {
   background-color: #0d7373;
   color: white;
 }
-a.nav-link{
+a.nav-link {
   color: white;
 }
-.navbar-brand{
+.navbar-brand {
   color: white;
   text-align: center;
 }
-#offcanvasNavbar{
+#offcanvasNavbar {
   width: 60%;
 }
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
-  color :#730d37;
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #730d37;
 }
-.offcanvas-header .btn-close:hover{
-  background:none;
-}
-
-
-.img-logo{
-  width:200px
+.offcanvas-header .btn-close:hover {
+  background: none;
 }
 
+.img-logo {
+  width: 200px;
+}
+.modal-backdrop.show {
+  display: none;
+}
+img.img {
+  width: 65%;
+  display: flex;
+  margin: auto;
+}
+a{
+  color: aliceblue;
+  text-decoration: none;
+}
 
-@media (max-width: 768px){
-  div.logo{
+@media (max-width: 768px) {
+  div.logo {
     display: none;
+  }
+  img.img {
+    width: 90%;
+  }
+  .col{
+    font-size: 0.9em;
   }
 }
