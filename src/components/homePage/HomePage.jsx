@@ -1,5 +1,5 @@
-import React from "react";
 import "./stilos.css";
+import Habilidades from "./components/Habilidades";
 import styled from "styled-components";
 export default function HomePage() {
   return (
@@ -30,57 +30,47 @@ export default function HomePage() {
             </a>{" "}
           </div>
         </div>
+
         <img
           className="img col-5"
           src="src/components/homePage/img/imgPage.jpg"
         />
       </div>
-      <div className="row">
+      <div className="row col">
         <h3>Habilidades</h3>
-       
-        <div className="col habilidades">
-          <h5>React</h5>
-          <p>habilidades con react descrion de las habilidadescon react descrion de las habilidadescon react descrion de las habilidades</p>
-          <img className="skillImg" src="https://aguilar.digital/wp-content/uploads/2022/06/react.png" />
-        </div>
-        <div className="col habilidades">
-          <h5>React</h5>
-          <p>habilidades con react descrion de las habilidadescon react descrion de las habilidadescon react descrion de las habilidades</p>
-          <img className="skillImg" src="https://aguilar.digital/wp-content/uploads/2022/06/react.png" />
-        </div>
-        <div className="col habilidades">
-          <h5>React</h5>
-          <p>habilidades con react descrion de las habilidadescon react descrion de las habilidadescon react descrion de las habilidades</p>
-          <img className="skillImg" src="https://aguilar.digital/wp-content/uploads/2022/06/react.png" />
-        </div>
-        
-        
-
-        
+        <Habilidades
+          titulo="REACT"
+          img="react"
+          descripcion="Tengo conocimientos basicos en REACT este portafolio que estas visitando esta echo en REACT utilizando VITE.js como puedes observar no es un sitio web es una progresive web app ya que al cambiar de enlace en el menu de navegacion tu navegador no recarga todo los recursos solo el que le solicitas"
+        />
+        <Habilidades
+          titulo="HTML5"
+          img="html5"
+          descripcion="Tengo conocimientos en maquetacion con HTML5 Como lo puedes observar en este portafolio"
+        />
+        <Habilidades
+          titulo="CSS3"
+          img="css3"
+          descripcion="De igual forma cuento con conocimientos en CCS3 para dar estilos de forma optima y moderna  en este portafolio se utilizo styled-components para dar estilos a cada componente por separado sin tener que exportar un archivo de  estilos "
+        />
       </div>
 
-
-      <div className="row">
-        
-        <div className="col habilidades">
-          <h5>React</h5>
-          <p>habilidades con react descrion de las habilidadescon react descrion de las habilidadescon react descrion de las habilidades</p>
-          <img className="skillImg" src="https://aguilar.digital/wp-content/uploads/2022/06/react.png" />
-        </div>
-        <div className="col habilidades">
-          <h5>React</h5>
-          <p>habilidades con react descrion de las habilidadescon react descrion de las habilidadescon react descrion de las habilidades</p>
-          <img className="skillImg" src="https://aguilar.digital/wp-content/uploads/2022/06/react.png" />
-        </div>
-        <div className="col habilidades">
-          <h5>React</h5>
-          <p>habilidades con react descrion de las habilidadescon react descrion de las habilidadescon react descrion de las habilidades</p>
-          <img className="skillImg" src="https://aguilar.digital/wp-content/uploads/2022/06/react.png" />
-        </div>
-        
-        
-
-        
+      <div className="row col">
+        <Habilidades
+          titulo="WORDPRESS"
+          img="wordpress"
+          descripcion="Tengo amplio conocimiento en el desarrollo de sitios web e E-commerce en Wordpress en la personalizacion de temas de colores de funciones  utilizando CSS· y Javascript"
+        />
+        <Habilidades
+          titulo="JAVASCRIPT"
+          img="javascript"
+          descripcion="tengo 2 años de experiencia tanto en este maravilloso y versatil lenguaje de programacion como vez aqui en este portafolio hay varias practicas realizadas con JS como la calculadora o la consulta a una API"
+        />
+        <Habilidades
+          titulo="BLOCKCHAIN"
+          img="blockchain"
+          descripcion="Soy un apasionado por las finanzas descentralizadas  el Bitcoin y la Blockchain y cuento con conocimientos  para operar en mercados crypto utilizar Wallets de manera segura y apenas empiezo con el desarrollo de contratos inteligentes"
+        />
       </div>
     </ContainerApp>
   );
@@ -98,8 +88,8 @@ const ContainerApp = styled.div`
   text-align: center;
 }
 .skillImg{
-  width: 30%;
-  height: 30%px;
+  width: 7em;
+  height: 7em;
 }
 .btn{
   background:#0d7373;
@@ -107,7 +97,7 @@ const ContainerApp = styled.div`
 }
   h2 ,h3{
     font-family: "Montserrat", sans-serif;
-    color: #14eeee;
+    color: #fff;
     font-size: 2em;
     font-weight: bold;
     text-align: center;
@@ -115,8 +105,11 @@ const ContainerApp = styled.div`
     margin-top: 20px;
     cursor:initial;
   }
-  .p {
-    text-align: center;
-    cursor:initial;
+  p {
+    text-align: justify;
+    margin : 0 10px 20px 10px;
+    font-weight: bold;
+    
   }
+ 
 `;

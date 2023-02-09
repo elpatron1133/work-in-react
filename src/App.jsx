@@ -27,16 +27,19 @@ export default function App() {
       <div className="logo">
         <img src={logo} alt="Logo Aguilar" />
       </div>
-      <div className="divPrincipal container-fluid " aria-current="page"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close" type="button" >
+      <div
+        className="divPrincipal container-fluid "
+        aria-current="page"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+        type="button"
+      >
         <Routes>
-          <Route
-            path="/react-work"element={<HomePage />}
-          />
+          <Route path="/react-work" element={<HomePage />} />
           <Route path="/react-work/calculadora" element={<Calculadora />} />
           <Route path="/react-work/contador" element={<ContadorDeClicks />} />
           <Route path="/react-work/yugicards" element={<YugiFind />} />
+
           <Route
             path="/react-work/piedrapapeltijera"
             element={<PiedraPapelTijera />}
